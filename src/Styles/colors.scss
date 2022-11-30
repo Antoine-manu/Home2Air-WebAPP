@@ -1,0 +1,20 @@
+//Varibales custom
+$red : #E54E4E;
+$blue : #036DDF;
+$yellow : #F2B82F;
+$green : #00A67F;
+$purple : #56459E;
+$lightgrey : #F8F9F9;
+$grey : #DADADA;
+$darkgrey : #A7A7A7;
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+.danger{
+    background-color: $red;
+}
+.info{
+    background-color: $yellow;
+}
+.success{
+    background-color: $green;
+}

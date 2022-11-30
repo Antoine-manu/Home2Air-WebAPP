@@ -1,24 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './Pages/Home';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {faWind, faUser, faBell, faTicket, faArrowRightFromBracket, faGear} from "@fortawesome/free-solid-svg-icons";
+import Template from './Pages/Template';
+
+library.add(faWind, faUser, faBell, faTicket, faArrowRightFromBracket, faGear);
 
 function App() {
+  const propos = {
+    'place' : [
+      {
+        'sensors' :[
+          {
+            'name' : 'Canapé',
+            'percent' : 80,
+          },
+          {
+            'name' : 'Buffet',
+            'percent' : 82,
+          }
+        ],
+        'name' : 'Salon'
+      },
+      {
+        'sensors' :[
+          {
+            'name' : 'Lit',
+            'percent' : 10,
+          },
+          {
+            'name' : 'Entrée',
+            'percent' : 61,
+          }
+        ],
+        'name' : 'Chambre'
+      }
+    ],
+    'name' : 'Home'
+  }
+
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Template/>,
+      children:[
+        {
+          index : true,
+          element : <Home data={propos}/>
+        }
+      ]
+    },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <RouterProvider router={router} />
   );
 }
 
