@@ -19,11 +19,25 @@ export default function Navbar() {
                             <FontAwesomeIcon icon="fa-solid fa-wind" /> Mes capteurs 
                             </NavLink>
                         </li>
-                        <li> <a href=""><FontAwesomeIcon icon="fa-solid fa-user" /> Mon profil </a></li>
-                        <li>  <a href=""><FontAwesomeIcon icon="fa-solid fa-bell" /> Notifications</a></li>
-                        <li> <a href=""><FontAwesomeIcon icon="fa-solid fa-ticket" /> Mes tickets </a></li>
+                        <li> 
+                            <NavLink to="/profil">
+                                <FontAwesomeIcon icon="fa-solid fa-user" /> Mon profil
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink>
+                                <FontAwesomeIcon icon="fa-solid fa-bell" /> Notifications
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink>
+                                <FontAwesomeIcon icon="fa-solid fa-ticket" /> Mes tickets
+                            </NavLink>
+                        </li>
                     </ul> 
-                    <a href="">Se déconnecter <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-bracket" /></a>
+                    <NavLink>
+                        Se déconnecter <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-bracket" />
+                    </NavLink>
                 </nav>
             </header>
         </>

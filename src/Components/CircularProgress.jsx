@@ -1,20 +1,14 @@
 import { CircularProgress } from "@mui/material"
+import {getColor} from "../Helpers/getColorHelper"
 
 export default function circularProgress({percent}) {
     
-    let color = ''
+    let color = getColor(percent)
 
-    if(percent<60){
-        color = 'danger'
-    } else if(percent>=60 && percent<80){
-        color = 'info'
-    } else if(percent>=80){
-        color = 'success'
-    }
     return(
         <>
             <div className="circularprogress">
-                <CircularProgress variant="determinate" color="lightgrey"  size='70px' value={100} />
+                <CircularProgress variant="determinate" style={{ color: '#F0F0F0' }} size='70px' value={100} />
                 <CircularProgress variant="determinate" color={color}  size='70px' value={percent} />
                 <div>
                     <p>{percent}</p>
