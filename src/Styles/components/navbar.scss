@@ -46,3 +46,16 @@
         }
     }
 }
+
+.navbar_dark{
+    background-color: $darkblue;
+
+    
+    &>ul{
+        &>li{
+            &>a{
+                color: white;
+            }
+        }
+    }
+}

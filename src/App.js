@@ -1,5 +1,6 @@
 import Home from './Pages/Home';
 import Profil from './Pages/Profil';
+import AdminUsers from './Pages/Admin/Users/Users';
 import SingleSensor from './Pages/SingleSensor';
 
 import {
@@ -82,7 +83,17 @@ function App() {
           element : <SingleSensor/>
         }
       ]
-    }
+    },
+    {
+      path: "/admin/users",
+      element: <Template/>,
+      children:[
+        {
+          index : true,
+          element : <AdminUsers/>
+        }
+      ]
+    },
   ]);
 
   return (
