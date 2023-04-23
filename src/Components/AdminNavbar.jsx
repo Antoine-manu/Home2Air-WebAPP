@@ -13,11 +13,22 @@ export default function Navbar() {
                     <ul>
                         <li> 
                             <NavLink to="/admin/users">
+                                
                                 <FontAwesomeIcon icon="fa-solid fa-user" /> Utilisateurs
                             </NavLink>
                         </li>
+                        <li> 
+                            <NavLink to="/admin/tickets">
+                                <FontAwesomeIcon icon="fa-solid fa-ticket" /> Tickets
+                            </NavLink>
+                        </li>
+                        <li> 
+                            <NavLink to="/admin/sensors">
+                                <FontAwesomeIcon icon="fa-solid fa-wind" /> Capteurs
+                            </NavLink>
+                        </li>
                     </ul> 
-                    <NavLink>
+                    <NavLink to="/disconnect">
                         Se déconnecter <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-bracket" />
                     </NavLink>
                 </nav>

@@ -25,17 +25,17 @@ export default function Navbar() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink>
+                            <NavLink to="/notifications">
                                 <FontAwesomeIcon icon="fa-solid fa-bell" /> Notifications
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink>
+                            <NavLink to="/tickets">
                                 <FontAwesomeIcon icon="fa-solid fa-ticket" /> Mes tickets
                             </NavLink>
                         </li>
                     </ul> 
-                    <NavLink>
+                    <NavLink to="/disconnect">
                         Se déconnecter <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-bracket" />
                     </NavLink>
                 </nav>

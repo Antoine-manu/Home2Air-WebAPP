@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default function Profil() {
 
     const user = {
@@ -8,16 +10,15 @@ export default function Profil() {
     return(
         <>
             <div className="profil">
-                <a href="" className="btn btn-primary">test</a>
                 <h1>Mon profil</h1>
                 <div className="profil__form">
                     <div className="form-layout-mid">
-                        <div>
+                        <div className="form-layout-mid__top">
+                            <h3>Informations personnelles</h3>
+                            <a href=""><FontAwesomeIcon icon="fa-solid fa-pen-to-square" /></a>
+                        </div>
+                        <div className="profil__img">
                             <img className="rounded" src={process.env.PUBLIC_URL + '/img/dd.jpg'} alt="" />
-                            <div>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
                         </div>
                         <div className="form-group">
                             <label for="name">Prénom</label>
@@ -37,6 +38,10 @@ export default function Profil() {
                         </div>
                     </div>
                     <div className="form-layout-mid">
+                        <div className="form-layout-mid__top">
+                            <h3>Informations professionelles</h3>
+                            <a href=""><FontAwesomeIcon icon="fa-solid fa-pen-to-square" /></a>
+                        </div>
                         <div className="form-group">
                             <label for="nameownercompany">Prénom</label>
                             <input type="text" className="form-control" id="nameownercompany" placeholder="Théo"/>

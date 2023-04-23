@@ -12,3 +12,57 @@
         margin-left: 8px;
     }
 }
+
+.badgeDataAdvanced{
+    height: 300px;
+    width: 80px;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: $box-shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__bars{
+        height: 55%;
+        width: 12px;
+        position: relative;
+        &__bg{
+            position: absolute;
+            background-color: $darkblue;
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        &__active{
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    &__datas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__data{
+            font-size: 30px;
+        }
+
+        &__subtile{
+            color: $darkgrey;
+            font-size: 16px;
+        }
+    }
+}

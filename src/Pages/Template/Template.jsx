@@ -9,7 +9,8 @@ export default function Template() {
 
     return(
         <ThemeProvider theme={theme}>
-            <NavbarAdmin/>
+            <Navbar/>
+            {/* <NavbarAdmin/> */}
             <main>
                 <Outlet/>
             </main>

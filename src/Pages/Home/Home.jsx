@@ -33,7 +33,7 @@ export default function Home({data}) {
         }
 
 
-        content.push(<h3>{place.name} <div className={'pastille ' + color}></div></h3>)
+        content.push(<h3 className='mt-4'>{place.name} <div className={'pastille ' + color}></div></h3>)
         content.push(<div>{divContent}</div>)
     });
 

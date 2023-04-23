@@ -82,7 +82,7 @@
         }
         &__advice{
             width: 45%;
-            padding-left: 16px;
+            padding: 16px;
             background-color: $lightgrey;
             border-radius: 16px;
 
@@ -91,4 +91,40 @@
             }
         }
     }
+}
+
+.singlesensor_advanced{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+
+    .singlesensor__badges__advanced{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &>.singlesensor__circular{
+        width: 50%;
+        margin: 0;
+    }
+
+    &__details{
+        width: 50%;
+
+        &>.singlesensor__badges{
+            width: 100%;
+
+            &>.badgeData {
+                width: 86px;
+                background-color: white;
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+
+    
 }
