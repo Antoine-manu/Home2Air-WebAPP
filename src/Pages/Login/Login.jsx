@@ -5,8 +5,8 @@ import logo from '../../assets/img/logo.svg'
 import {NavLink} from "react-router-dom";
 
 export default function Login() {
-  const [email, setEmail] = useState('Daveloper@test.com');
-  const [password, setPassword] = useState('test');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
   const login = async () => {
