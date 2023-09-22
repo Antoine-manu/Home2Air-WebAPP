@@ -5,8 +5,8 @@ import logo from '../../assets/img/logo.svg'
 import {NavLink} from "react-router-dom";
 
 export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('theo.dupont@gmail.com');
+  const [password, setPassword] = useState('theodupont');
   const [error, setError] = useState(null);
 
   const login = async () => {
@@ -18,7 +18,7 @@ export default function Login() {
       });
       localStorage.setItem('userId', response.userId);
       localStorage.setItem('token', response.token);
-      window.location.href('/')
+      window.location.reload()
     } catch (error) {
       setError(error.message);
       console.log(error.message);
