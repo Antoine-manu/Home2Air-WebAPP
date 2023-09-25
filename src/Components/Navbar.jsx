@@ -9,7 +9,7 @@ export default function Navbar() {
     const disconnect = () => {
       localStorage.removeItem('token');
       localStorage.removeItem('userId');
-        window.location.reload()
+        window.location.href("/Home2Air-WebAPP/")
     };
 
     return(

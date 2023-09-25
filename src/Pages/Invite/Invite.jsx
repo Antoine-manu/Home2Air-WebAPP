@@ -25,7 +25,7 @@ export default function Invite() {
     const accept = async () => {
         const response = await fetchRoute(`invite/accept`, 'post', {id : InviteId}, token);
         if(response != null){
-            window.location.href = `/space/${invite.Place.id}`
+            window.location.href = `/Home2Air-WebAPP/space/${invite.Place.id}`
         }
     };
 
@@ -37,7 +37,7 @@ export default function Invite() {
         if(invite != null){
             console.log(invite)
             if(invite.isAccpected == true){
-                window.location.href = `/space/${invite.Place.id}`
+                window.location.href = `/Home2Air-WebAPP/space/${invite.Place.id}`
             }
         }
     }, [invite]);
