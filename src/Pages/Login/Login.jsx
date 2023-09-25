@@ -18,7 +18,7 @@ export default function Login() {
       });
       localStorage.setItem('userId', response.userId);
       localStorage.setItem('token', response.token);
-      window.location.href('/Home2Air-WebAPP/')
+      window.location.href('/')
     } catch (error) {
       setError(error.message);
       console.log(error.message);
